@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     }
 
     const response = await client.images.generate({
-      model: "grok-2-image",
+      model: "grok-2-image-gen",
       prompt,
       n: 3,
     });
